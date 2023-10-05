@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es" data-bs-theme="ligth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Revista Peon Rey</title>
+    <link rel="shortcut icon" href="assets/img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Style.css">
+  </head>
+  <body>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <div class="container-fluid">
+     <header class="border border-secondary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#quienes-somos">¿Que buscamos?</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#piezas">Piezas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#campeones">Ultimos Campeones mundiales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#comunicate">Comunicate con nosotros</a>
+              </li>      
+            </ul>
+            <li id="jugaronline" class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Jugar Online
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://lichess.org/">Lichess</a></li>
+                <li><a class="dropdown-item" href="https://www.chess.com/">chess.com</a></li>
+                <li><a class="dropdown-item" href="https://chess24.com/es">chess24</a></li>                  
+              </ul>
+            </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+    <main>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <img src="assets/img/icono.png">
+      <h1 class="px-3"><u>Revista Peon Rey</u></h1>
+    </div><br>
+    <p id="quienes-somos" class="border border-dark col-6 mx-auto quienes somos">El presente es una pagina creada por Daros Mauricio DNI: 37562095, que busca simular lo que vendria a ser una revista digital de la tematica "Ajedrez".<br>
+      Asimismo, la presente tiene como unico objetivo poder aprobar la entrega del trabajo integrador de bootstrap correspondiente al curso CodoACodo. &#128517;</p>
+    <!--piesas-->
+    <div class="container text-center py-3 contenedor-piezas">
+      <h2 id="piezas" class="text-center col-3 mx-auto contenedor-piezas-h2">Conoce las Piezas</h2>
+      <div class="row align-items-start">
+        <div id="pieza-peon" class="col">
+          <a href="https://es.wikipedia.org/wiki/Pe%C3%B3n_(ajedrez)"><img src="assets/img/piesas de ajedrez/peon.png" class="px-3"></a>
+          <p class="name">Peon</p>
+        </div>
+        <div id="pieza-caballo" class="col">
+          <a href="https://es.wikipedia.org/wiki/Caballo_(ajedrez)"><img src="assets/img/piesas de ajedrez/caballo.png" class="px-3"></a>
+          <p class="name">Caballo</p>
+        </div>
+        <div id="pieza-alfil" class="col">
+          <a href="https://es.wikipedia.org/wiki/Alfil" id="pieza-alfil-img"><img src="assets/img/piesas de ajedrez/alfil.png"  class="px-3"></a>
+          <p class="name">Alfil</p>         
+        </div>
+        <div id="pieza-torre" class="col">
+          <a href="https://es.wikipedia.org/wiki/Torre_(ajedrez)"><img src="assets/img/piesas de ajedrez/torre.png" class="px-3"></a>
+          <p class="name">Torre</p>
+        </div>
+        <div id="pieza-dama" class="col">
+          <a href="https://es.wikipedia.org/wiki/Dama_(ajedrez)"><img src="assets/img/piesas de ajedrez/dama.png" class="px-3"></a>
+          <p class="name">Dama</p>
+        </div>
+        <div id="pieza-rey" class="col">
+          <a href="https://es.wikipedia.org/wiki/Rey_(ajedrez)"><img src="assets/img/piesas de ajedrez/rey.png" class="px-3"></a>
+          <p class="name">Rey</p>          
+        </div>
+      </div>
+    </div>
+    <!--carrousel-->
+    <h2 class="col-2 text-center mx-auto py-3 carrusel">Ajedrez</h2>
+    <div id="carouselExampleIndicators" class="carousel slide col-6 mx-auto">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner my-5">
+        <div class="carousel-item active">
+          <img src="assets/img/carrusel/1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carrusel/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carrusel/3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--cartas-->
+    <h2 class="col-3 mx-auto cartas-titulo">Ultimos campeones mundiales:</h2>
+    <div id="campeones" class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4 mx-auto my-5">
+          <span class="badge rounded-pill text-bg-primary">2022</span>
+          <span class="badge rounded-pill text-bg-danger">Today</span>
+          <img src="assets/img/ultimos campeones del mundo/dingliren.jpg" class="img-fluid rounded-start mx-auto" alt="...">
+        </div>
+        <div class="col-lg">
+          <div class="card-body">
+            <h5 class="card-title">Actual campeon del mundo Ding Liren</h5>
+            <p class="card-text">Ding Liren (en chino: 丁立人; Wenzhou, Zhejiang, 24 de octubre de 1992) es un Gran Maestro de ajedrez chino. Es el vigente campeón del mundo, tras haber vencido a Ian Nepomniachtchi en el Campeonato Mundial de Ajedrez 2023. En agosto de 2015, se convirtió en el segundo jugador chino, tras Wang Yue, en alcanzar los diez primeros puestos de la clasificación de la FIDE. Ding es el jugador chino que ha alcanzado tanto el puesto más alto en el ranking de la FIDE como la tercera puntuación Elo más alta.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="assets/img/ultimos campeones del mundo/magnus carsen.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">          
+          <h5 class="card-title">Magnus Carlsen</h5>
+          <span class="badge rounded-pill text-bg-primary">2013</span>
+          <span class="badge rounded-pill text-bg-danger">2022</span>
+          <p class="card-text">Sven Magnus Øen Carlsen (Tønsberg; 30 de noviembre de 1990) es un Gran Maestro de ajedrez noruego, coronado como el decimosexto Campeón Mundial de Ajedrez. Se proclamó campeón mundial el 28 de noviembre de 2013, a los 22 años, 11 meses y 23 días,1​ con lo que fue el segundo campeón más joven de la historia después de Garry Kaspárov. Obtuvo el título al vencer al campeón Viswanathan Anand por 6½-3½ puntos (3 victorias y 7 empates) en el encuentro organizado por la FIDE en la ciudad india de Chennai. Es considerado como uno de los mejores jugadores de la historia del ajedrez.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/ultimos campeones del mundo/visianan.jpg" class="card-img-top" alt="...">
+        <div class="card-body">          
+          <h5 class="card-title">Viswanathan Anand</h5>
+          <span class="badge rounded-pill text-bg-primary">2007</span>
+          <span class="badge rounded-pill text-bg-danger">2013</span>
+          <p class="card-text">Viswanathan "Vishy" Anand (en tamil, விஸ்வநாதன் ஆனந்த், Visvanātaṉ Āṉant; Mayiladuthurai, Chennai, Tamil Nadu, 11 de diciembre de 1969) es un Gran Maestro de ajedrez y decimoquinto Campeón del mundo de ajedrez desde 2007 a 2013.<br>El 24 de diciembre de 2000 se proclamó campeón del mundo de ajedrez de la FIDE tras vencer en la final a Alexéi Shírov.1​ Perdió el título en 2002, tras caer en semifinales frente a Vasili Ivanchuk, que a su vez perdió la final frente a Ruslán Ponomariov.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/ultimos campeones del mundo/vladimirkramnik.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Vladimir Kramnik</h5>
+          <span class="badge rounded-pill text-bg-primary">2000</span>
+          <span class="badge rounded-pill text-bg-danger">2007</span>
+          <p class="card-text">Vladímir Borísovich Krámnik (ruso: Влади́мир Бори́сович Кра́мник; Tuapsé, Unión Soviética, 25 de junio de 1975) es un Gran Maestro Internacional ruso, que ostentó el título de decimocuarto campeón del mundo de ajedrez.<br>El estilo de Krámnik es posicional y de técnica defensiva. Su capacidad posicional-defensiva le permite asestar certeros contragolpes desde sus sólidas posiciones, lo que para los rivales es bastante frustrante, más aún si enfrentan al ruso con un planteo ofensivo. Gracias a este estilo, Krámnik reporta grandes éxitos al lograr muchas tablas y ganar unas pocas partidas con blancas. Con las piezas negras es más conocido por estar muy cómodo con las tablas, pero en algunos casos logrando victorias. Continúa la escuela de Capablanca, Smyslov o Kárpov, entre otros campeones mundiales. Es un jugador difícil de vencer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <!--formulario-->
+    <section id="comunicate" class="px-5 my-5">
+      <form class="col-6 mx-auto border border-dark">
+        <div class="mb-3 px-5">
+          <label for="exampleInputEmail1" class="form-label">Comunicate con nosotros<br><b>mail:</b></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Tu información es confidencial</div>
+        </div>
+        <div id="formulario-texto" class="mb-3 px-5">
+          <label  for="exampleInputPassword1" class="form-label"><b>Texto</b></label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check px-5">
+        </div class="px-3">
+        <button type="submit" id="formulario-button" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer class="border-dark border 5px $theme-colors: ("primary":    $primary,">
+    <div class="row">
+      <div class="text-center"><b>Recuerda que puedes jugar online en cualquiera de los sig enlaces:</b></div>
+      <div class="col">
+        <a class="dropdown-item" href="https://lichess.org/">Lichess</a>
+      </div>
+      <div class="col">
+      <a class="dropdown-item" href="https://www.chess.com/">chess.com</a>
+      </div>
+      <div class="col">
+      <a class="dropdown-item" href="https://chess24.com/es">chess24</a>  
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
